@@ -20,7 +20,7 @@ export const LoginView = ({ employees, onLogin }: LoginViewProps) => {
     const trimmedUsername = username.trim();
 
     // Admin Login Check
-    if ((trimmedUsername === 'admin' && password === 'admin1234') || (trimmedUsername === '2222' && password === '2222')) {
+    if ((trimmedUsername === 'admin' && password === 'admin1234') || (trimmedUsername === 'admin' && password === '2222')) {
       onLogin({ role: 'admin', name: 'System Administrator' });
       return;
     }
